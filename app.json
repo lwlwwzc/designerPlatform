@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/classify/classify",
+    "pages/designer/designer",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "bft",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#dddddd",
+    "selectedColor":"#000",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    },
+    {
+      "pagePath":"pages/classify/classify",
+      "text":"分类"
+    },
+    {
+      "pagePath":"pages/designer/designer",
+      "text":"设计师"
+    },
+    {
+      "pagePath":"pages/user/user",
+      "text":"个人"
+    }]
+  }
+}
