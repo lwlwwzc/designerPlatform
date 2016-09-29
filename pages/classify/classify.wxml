@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for-items="{{banners}}">
+            <swiper-item>
+                <view id="{{item.bannerId}}" bindtap="bannerTapped">
+                    <image src="{{item.bannerUrl}}" style="width:100%"/>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view wx:for="{{items}}">
+        <text>{{item.index}}:{{item.value}}</text>
+    </view>
+</view>
+

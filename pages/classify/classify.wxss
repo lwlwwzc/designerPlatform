@@ -1,0 +1,7 @@
+.mainView {
+    flex:100%
+}
+
+.bannerView {
+    background: #000
+}

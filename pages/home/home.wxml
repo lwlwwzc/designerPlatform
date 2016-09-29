@@ -1,10 +1,15 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+        <block wx:for-items="{{banners}}">
+            <swiper-item>
+                <view id="{{item.bannerId}}" bindtap="bannerTapped">
+                    <image src="{{item.bannerUrl}}" style="width:100%"/>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view wx:for="{{items}}">
+        <text>{{item.index}}:{{item.value}}</text>
+    </view>
 </view>
