@@ -6,22 +6,24 @@
 }
 
 .itemView {
-    display: flex;
-    flex: 100%;
     background: #fff;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    justify-content:flex-start;
+    margin: 15px;
 }
 
 .btnContainer {
     flex: 100%;
-    display: flex;
+    display:flex;
+    flex-wrap:wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+.btn {
+    font-size:5pt;
+    width:60px;
+    height:30px;
 }
 

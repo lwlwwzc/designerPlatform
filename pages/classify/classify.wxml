@@ -1,10 +1,17 @@
 <!--index.wxml-->
-<view class="mainView" wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}">
+<scroll-view class="mainView" wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}">
     <view class="itemView">
         <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" style="width:100%"/>
-        <view class="btnContainer" wx:for="{{[1,2,3]}}">
-            <button style="width:80px;height:30px;">默认</button>
+        <view class="btnContainer">
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
+            <button class="btn">默认</button>
         </view>
     </view>
-</view>
+</scroll-view>
 
