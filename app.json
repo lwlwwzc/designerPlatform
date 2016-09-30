@@ -19,19 +19,27 @@
 
     "list": [{
       "pagePath": "pages/home/home",
-      "text": "首页"
+      "text": "首页",
+      "iconPath":"pages/assets/image/home.png",
+      "selectedIconPath":"pages/assets/image/home.png"
     },
     {
       "pagePath":"pages/classify/classify",
-      "text":"分类"
+      "text":"分类",
+      "iconPath":"pages/assets/image/classify.png",
+      "selectedIconPath":"pages/assets/image/classify.png"
     },
     {
       "pagePath":"pages/designer/designer",
-      "text":"设计师"
+      "text":"设计师",
+      "iconPath":"pages/assets/image/star.png",
+      "selectedIconPath":"pages/assets/image/star.png"
     },
     {
       "pagePath":"pages/user/user",
-      "text":"个人"
+      "text":"个人",
+      "iconPath":"pages/assets/image/mine.png",
+      "selectedIconPath":"pages/assets/image/mine.png"
     }]
   }
 }
