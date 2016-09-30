@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/classify/classify",
     "pages/designer/designer",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/cart/cart"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -34,6 +35,12 @@
       "text":"设计师",
       "iconPath":"pages/assets/image/star.png",
       "selectedIconPath":"pages/assets/image/star.png"
+    },
+    {
+      "pagePath":"pages/cart/cart",
+      "text":"购物车",
+      "iconPath":"pages/assets/image/cart.png",
+      "selectedIconPath":"pages/assets/image/cart.png"
     },
     {
       "pagePath":"pages/user/user",

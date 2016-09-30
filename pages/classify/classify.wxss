@@ -1,7 +1,27 @@
 .mainView {
-    flex:100%
+    flex:100%;
+    background: #eee;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.bannerView {
-    background: #000
+.itemView {
+    display: flex;
+    flex: 100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
+
+.btnContainer {
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+

@@ -1,16 +1,10 @@
 <!--index.wxml-->
-<view>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
-        <block wx:for-items="{{banners}}">
-            <swiper-item>
-                <view id="{{item.bannerId}}" bindtap="bannerTapped">
-                    <image src="{{item.bannerUrl}}" style="width:100%"/>
-                </view>
-            </swiper-item>
-        </block>
-    </swiper>
-    <view wx:for="{{items}}">
-        <text>{{item.index}}:{{item.value}}</text>
+<view class="mainView" wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}">
+    <view class="itemView">
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" style="width:100%"/>
+        <view class="btnContainer" wx:for="{{[1,2,3]}}">
+            <button style="width:80px;height:30px;">默认</button>
+        </view>
     </view>
 </view>
 
