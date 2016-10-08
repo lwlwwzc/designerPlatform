@@ -10,9 +10,22 @@
     flex-direction: column;
     justify-content:flex-start;
     margin: 15px;
+    padding-bottom:10px;
+}
+
+.bannerView {
+    width:200px;
+    height:500px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    background:url('http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg') center no-repeat;
+    background-size:contain;
 }
 
 .btnContainer {
+    background:#fff;
     flex: 100%;
     display:flex;
     flex-wrap:wrap;
@@ -21,9 +34,13 @@
     align-items:flex-start;
 }
 
+.btnView {
+    margin-left:10px;
+    margin-top:10px;
+}
+
 .btn {
-    font-size:5pt;
-    width:60px;
-    height:30px;
+    font-size:14px;
+    text-align:left;
 }
 

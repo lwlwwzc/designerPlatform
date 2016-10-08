@@ -1,16 +1,43 @@
 <!--index.wxml-->
 <scroll-view class="mainView" wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}">
     <view class="itemView">
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" style="width:100%"/>
+        <view class="bannerView">
+            <text style="color:black;">我是文字</text>
+        </view>
         <view class="btnContainer">
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
-            <button class="btn">默认</button>
+            <view class="btnView">
+                <button class="btn">默认默认</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认默</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认11</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认222</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认aaa</button>
+            </view>
+            <view class="btnView">
+                <button class="btn">默认</button>
+            </view>
         </view>
     </view>
 </scroll-view>

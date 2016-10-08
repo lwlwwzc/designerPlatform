@@ -10,3 +10,29 @@
     left: 100px;
 }
 
+.mainView {
+    display:flex;
+    flex:100%;
+    flex-flow:row;
+    justify-content:flex-start;
+    align-items:flex-start;
+    align-content:flex-start;
+}
+
+.btn {
+    width:100px;
+}
+
+.flex-wrp{
+    flex:100%;
+    display:flex;
+    background-color: #FFFFFF;
+    flex-wrap:wrap;
+}
+.flex-item{
+    width: 100px;
+    height: 50px;
+    margin-left:10px;
+    display:flex;
+    align-items:stretch;
+}
