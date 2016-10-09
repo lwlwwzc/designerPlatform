@@ -24,3 +24,9 @@
   align-self: flex-start;
   color: #aaa;
 }
+
+.mainList
+{
+  width:375px;
+  height:100%;
+}

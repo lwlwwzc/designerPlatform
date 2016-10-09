@@ -1,15 +1,15 @@
 <!--index.wxml-->
-<view>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
-        <block wx:for="{{banners}}">
-            <swiper-item>
-                <view id="{{item.bannerId}}" bindtap="bannerTapped">
-                    <image src="{{item.bannerUrl}}" style="width:100%"/>
-                </view>
-            </swiper-item>
-        </block>
-    </swiper>
-    <view wx:for="{{items}}">
-        <text>{{item.index}}:{{item.value}}</text>
-    </view>
-</view>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:150px;">
+    <block wx:for="{{banners}}">
+        <swiper-item>
+            <view id="{{item.bannerId}}" bindtap="bannerTapped">
+                <image src="{{item.bannerUrl}}" style="width:100%"/>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<scroll-view  scroll-y="true" style="height:{{screenSize.height - 196}}px">
+    <view style="background: red; width:375px; height:100px;margin-top:10px;" wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}"></view>
+</scroll-view>
+

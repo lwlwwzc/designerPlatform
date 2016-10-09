@@ -1,6 +1,10 @@
 //index.js
 //获取应用实例
+
+var util = require('../../utils/util.js')
+
 var app = getApp()
+
 Page({
   data:{
     items:null,
@@ -8,6 +12,7 @@ Page({
     autoplay: true,
     interval: 3000,
     duration: 1000,
+    screenSize:null,
 
     banners:[
       {
@@ -34,6 +39,16 @@ Page({
     }
 
     this.data.items = list;
+
+    var that = this;
+
+    wx.getSystemInfo({
+      success:function(res){
+        that.setData({
+          screenSize: {"width":res.windowWidth, "height":res.windowHeight}
+        })
+      }
+    })
   },
   onReady:function(){
     // 页面渲染完成

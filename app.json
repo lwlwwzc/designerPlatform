@@ -2,9 +2,12 @@
   "pages":[
     "pages/home/home",
     "pages/classify/classify",
-    "pages/designer/designer",
     "pages/user/user",
-    "pages/cart/cart"
+    "pages/cart/cart",
+    "pages/artDetail/artDetail",
+    "pages/artList/artList",
+    "pages/artist/artist",
+    "pages/artistDetail/artistDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -16,38 +19,38 @@
   "tabBar": {
     "color":"#dddddd",
     "selectedColor":"#000",
-    "backgroundColor":"#fff",
+    "backgroundColor":"#00f",
     "borderStyle":"white",
 
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath":"pages/assets/image/home.png",
-      "selectedIconPath":"pages/assets/image/home.png"
+      "iconPath":"assets/image/home.png",
+      "selectedIconPath":"assets/image/home.png"
     },
     {
       "pagePath":"pages/classify/classify",
       "text":"分类",
-      "iconPath":"pages/assets/image/classify.png",
-      "selectedIconPath":"pages/assets/image/classify.png"
+      "iconPath":"assets/image/classify.png",
+      "selectedIconPath":"assets/image/classify.png"
     },
     {
-      "pagePath":"pages/designer/designer",
+      "pagePath":"pages/artist/artist",
       "text":"设计师",
-      "iconPath":"pages/assets/image/star.png",
-      "selectedIconPath":"pages/assets/image/star.png"
+      "iconPath":"assets/image/star.png",
+      "selectedIconPath":"assets/image/star.png"
     },
     {
       "pagePath":"pages/cart/cart",
       "text":"购物车",
-      "iconPath":"pages/assets/image/cart.png",
-      "selectedIconPath":"pages/assets/image/cart.png"
+      "iconPath":"assets/image/cart.png",
+      "selectedIconPath":"assets/image/cart.png"
     },
     {
       "pagePath":"pages/user/user",
       "text":"个人",
-      "iconPath":"pages/assets/image/mine.png",
-      "selectedIconPath":"pages/assets/image/mine.png"
+      "iconPath":"assets/image/mine.png",
+      "selectedIconPath":"assets/image/mine.png"
     }]
   }
 }

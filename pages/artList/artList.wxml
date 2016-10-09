@@ -1,0 +1,4 @@
+<view>
+    <text>{{title}}</text>
+    <button bindtap="btnTapped">跳转</button>
+<view>
