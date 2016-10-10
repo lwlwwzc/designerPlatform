@@ -4,8 +4,8 @@
     "pages/classify/classify",
     "pages/user/user",
     "pages/cart/cart",
-    "pages/artDetail/artDetail",
-    "pages/artList/artList",
+    "pages/prdtDetail/prdtDetail",
+    "pages/prdtList/prdtList",
     "pages/artist/artist",
     "pages/artistDetail/artistDetail"
   ],
@@ -19,7 +19,7 @@
   "tabBar": {
     "color":"#dddddd",
     "selectedColor":"#000",
-    "backgroundColor":"#00f",
+    "backgroundColor":"#aaa",
     "borderStyle":"white",
 
     "list": [{

@@ -9,7 +9,17 @@
         </swiper-item>
     </block>
 </swiper>
-<scroll-view  scroll-y="true" style="height:{{screenSize.height - 196}}px">
-    <view style="background: red; width:375px; height:100px;margin-top:10px;" wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}"></view>
+<scroll-view  scroll-y="true" style="width:100%;height:{{screenSize.height - 196}}px">
+    <view class="itemView" wx:for="{{recomList}}">
+        <view class="recomArtistView" bindtap="artistInfoTap">
+            <view class="avatorIcon" style="background-image:url({{item.avatar}});"></view>
+            <text style="margin-left:10px;">{{item.name}}</text>
+        </view>
+        <view style="recomPrdtView">
+            <view style="margin:5px;float:left;width:160px;height:120px;" wx:for="{{item.newList}}" wx:for-index="imgIdx" wx:for-item="imgSrc">
+                <image src="{{imgSrc}}" style="width:100%; height:100%" ></image>
+            </view>
+        </view>
+    </view>
 </scroll-view>
 

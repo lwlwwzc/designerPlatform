@@ -1,4 +1,2 @@
 <!--index.wxml-->
-<view class="container">
-    <text>个人</text>
-</view>
+<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>

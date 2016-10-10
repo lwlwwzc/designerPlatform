@@ -7,7 +7,6 @@ var app = getApp()
 
 Page({
   data:{
-    items:null,
     indicatorDots: true,
     autoplay: true,
     interval: 3000,
@@ -27,28 +26,57 @@ Page({
         bannerId:"3",
         bannerUrl:"http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
       }
+    ],
+
+    recomList:[
+      {
+        name:"设计师1",
+        avatar:"../../assets/image/icon1.jpg",
+        newList:[
+          "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+        ]
+      },
+      {
+        name:"设计师2",
+        avatar:"../../assets/image/icon2.jpg",
+        newList:[
+          "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+        ]
+      },
+      {
+        name:"设计师3",
+        avatar:"../../assets/image/icon3.jpg",
+        newList:[
+          "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg",
+          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+        ]
+      },
     ]
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-    var list = new Array();
-    for(var i =0; i<100;i++)
-    {
-      var item = {index:i, value:"item"+i}
-      list[i] = item
-    }
-
-    this.data.items = list;
 
     var that = this;
-
     wx.getSystemInfo({
       success:function(res){
         that.setData({
           screenSize: {"width":res.windowWidth, "height":res.windowHeight}
         })
+
+        console.log("width:" + res.windowWidth + " height:" + res.windowHeight)
       }
     })
+
+
+
   },
   onReady:function(){
     // 页面渲染完成

@@ -26,7 +26,7 @@ Page({
     console.log("按钮点击");
 
     wx.navigateTo( {
-      url:"../artDetail/artDetail?title=detail"
+      url:"../prdtDetail/prdtDetail?title=detail"
     })
   }
 })
