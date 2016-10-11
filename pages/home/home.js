@@ -12,6 +12,7 @@ Page({
     interval: 3000,
     duration: 1000,
     screenSize:null,
+    imgSize:null,
 
     banners:[
       {
@@ -63,19 +64,7 @@ Page({
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
-
-    var that = this;
-    wx.getSystemInfo({
-      success:function(res){
-        that.setData({
-          screenSize: {"width":res.windowWidth, "height":res.windowHeight}
-        })
-
-        console.log("width:" + res.windowWidth + " height:" + res.windowHeight)
-      }
-    })
-
-
+    wx.getSystemInfo({success:this.onGetScreenSize})
 
   },
   onReady:function(){
@@ -89,6 +78,20 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+
+  onGetScreenSize:function(res){
+    this.setData({
+      screenSize: {"width":res.windowWidth, "height":res.windowHeight}
+    })
+
+    console.log("width:" + res.windowWidth + " height:" + res.windowHeight)
+
+    var w = (this.data.screenSize.width - 50)/2
+
+    this.setData({
+      imgSize:{width:w,height:w}
+    })
   },
 
 

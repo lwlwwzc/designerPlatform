@@ -20,7 +20,6 @@
     flex-direction: row;
     justify-content:center;
     align-items:center;
-    background-image:url('http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg');
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -43,5 +42,12 @@
 .btn {
     font-size:14px;
     text-align:left;
+}
+
+.maskTitle {
+    padding:10px 30px;
+    color:white;
+    background-color:black;
+    opacity:0.6;
 }
 
