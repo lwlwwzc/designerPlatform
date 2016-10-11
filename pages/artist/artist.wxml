@@ -1,24 +1,4 @@
 <!--index.wxml-->
-<view class="flex-wrp">
-    <view class="flex-item">
-        <button class="btn" type="primary">1</button>
-    </view>
-    <view class="flex-item" style="background: green">
-        <button>1</button>
-    </view>
-    <view class="flex-item" style="background: blue">
-        <button>1</button>
-    </view>
-    <view class="flex-item" style="background: red">
-        <button>1</button>
-    </view>
-    <view class="flex-item" style="background: green">
-        <button>1</button>
-    </view>
-    <view class="flex-item" style="background: blue">
-        <button>1</button>
-    </view>
-
-
-    <view>1fjkdjfkdj</view>
+<view class="mainView">
+    <input placeholder="请输入关键字"></input>
 </view>
