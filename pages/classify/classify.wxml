@@ -1,12 +1,13 @@
 <!--index.wxml-->
-<scroll-view class="mainView">
+<loading hidden="{{hidden}}">加载中...</loading>
+<scroll-view wx:if="{{hidden}}" class="mainView">
     <view class="itemView" wx:for="{{itemList}}">
         <view id="{{item.id}}" bindtap="imageTapped" class="bannerView" style="background-image:url({{item.imageUrl}});">
             <text class="maskTitle">{{item.title}}</text>
         </view>
         <view class="btnContainer">
             <view class="btnView" wx:for="{{item.btnList}}" wx:for-item="btn">
-                <button class="btn" id="{{btn.id}}">{{btn.title}}</button>
+                <text class="btn" id="{{btn.id}}" bindtap="btnTapped">{{btn.title}}</text>
             </view>
         </view>
     </view>

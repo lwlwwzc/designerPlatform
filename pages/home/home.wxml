@@ -1,25 +1,33 @@
 <!--index.wxml-->
+<loading hidden="{{hidden}}">加载中...</loading>
 
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:150px;">
-    <block wx:for="{{banners}}">
-        <swiper-item>
-            <view id="{{item.bannerId}}" bindtap="bannerTapped">
-                <image src="{{item.bannerUrl}}" style="width:100%"/>
+<view wx:if="{{hidden}}" style="background-color:white;width:100%;height:100%;display:flex;flex-direction:column;align-content:stretch;align-items:flex-start;">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="width:100%;height:150px;">
+        <block wx:for="{{banners}}">
+            <swiper-item>
+                <view id="{{item.bannerId}}" bindtap="bannerTapped">
+                    <image src="{{item.bannerUrl}}" style="width:100%"/>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!--//banner不随着一起滚动
+    <scroll-view  scroll-y="true" style="width:100%;height:{{screenSize.height - 196}}px">-->
+    <!--//banner跟着一起滚动-->
+    <scroll-view  scroll-y="true" style="width:100%;">
+        <view class="itemView" wx:for="{{recomList}}">
+            <view class="recomArtistView" bindtap="artistInfoTap">
+                <view class="avatorIcon" style="background-image:url({{item.avatar}});"></view>
+                <text style="margin-left:10px;">{{item.name}}</text>
             </view>
-        </swiper-item>
-    </block>
-</swiper>
-<scroll-view  scroll-y="true" style="width:100%;height:{{screenSize.height - 196}}px">
-    <view class="itemView" wx:for="{{recomList}}">
-        <view class="recomArtistView" bindtap="artistInfoTap">
-            <view class="avatorIcon" style="background-image:url({{item.avatar}});"></view>
-            <text style="margin-left:10px;">{{item.name}}</text>
-        </view>
-        <view style="recomPrdtView">
-            <view style="margin:5px;float:left;width:{{imgSize.width}}px;height:{{imgSize.height}}px;" wx:for="{{item.newList}}" wx:for-index="imgIdx" wx:for-item="imgSrc">
-                <image src="{{imgSrc}}" style="width:100%; height:100%" ></image>
+            <view style="recomPrdtView">
+                <view style="margin:5px;float:left;width:{{imgSize.width}}px;height:{{imgSize.height}}px;" wx:for="{{item.newList}}" wx:for-index="imgIdx" wx:for-item="imgSrc">
+                    <image src="{{imgSrc}}" style="width:100%; height:100%" ></image>
+                </view>
             </view>
         </view>
-    </view>
-</scroll-view>
+    </scroll-view>
+</view>
+
+
 

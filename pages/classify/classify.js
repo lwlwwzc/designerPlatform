@@ -1,6 +1,7 @@
 Page( {
   data: {
-    itemList: null
+    itemList: null,
+    hidden: true
   },
   onLoad: function( options ) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -116,9 +117,18 @@ Page( {
       }
     ]
 
-    this.setData({
-      itemList:list
+    this.setData( {
+      hidden: false,
+      itemList: list
     })
+
+    var that = this
+
+    setTimeout(function(){
+      that.setData({
+        hidden:true,
+      })
+    }, 2000)
 
   },
   onReady: function() {
@@ -136,13 +146,14 @@ Page( {
 
 
   //普通方法
-  imageTap: function( event ) {
+  imageTapped: function( event ) {
+    var id = event.target.id
 
-    console.log( "item clicked" );
+    console.log( id )
   },
 
-  viewloaded: function( event ) {
-    console.log( "view loaded" );
+  btnTapped: function( event ) {
+    var id = event.target.id
+    console.log( id )
   }
-
 })

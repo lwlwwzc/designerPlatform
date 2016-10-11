@@ -1,5 +1,6 @@
 <view style="width:100%;height:100%">
-    <canvas style="width:100%;height:100%" canvas-id="1"/>
+    <loading hidden="{{hidden}}">加载中...</loading>
+    <button type="default" bindtap="loadingTap">点击</button>
 </view>
 
 
