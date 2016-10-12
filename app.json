@@ -10,7 +10,7 @@
     "pages/artistDetail/artistDetail"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor":"#aaa",
     "navigationBarTitleText": "bft",
     "navigationBarTextStyle":"white",
