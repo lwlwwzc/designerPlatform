@@ -11,8 +11,8 @@
             </swiper-item>
         </block>
     </swiper>
-    <!--//banner不随着一起滚动
-    <scroll-view  scroll-y="true" style="width:100%;height:{{screenSize.height - 196}}px">-->
+    <!--//banner不随着一起滚动-->
+    <!--<scroll-view  scroll-y="true" style="width:100%;height:{{screenSize.height - 196}}px">-->
     <!--//banner跟着一起滚动-->
     <scroll-view  scroll-y="true" style="width:100%;">
         <view class="itemView" wx:for="{{recomList}}">

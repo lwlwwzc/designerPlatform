@@ -14,7 +14,8 @@
     "navigationBarBackgroundColor":"#aaa",
     "navigationBarTitleText": "bft",
     "navigationBarTextStyle":"white",
-    "backgroundColor":"#eee"
+    "backgroundColor":"#eee",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color":"#dddddd",
@@ -52,5 +53,6 @@
       "iconPath":"assets/image/mine.png",
       "selectedIconPath":"assets/image/mine.png"
     }]
-  }
+  },
+  "debug": true
 }

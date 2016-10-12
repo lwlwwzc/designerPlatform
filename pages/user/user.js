@@ -8,13 +8,13 @@ Page({
   },
   onReady:function(){
     // 页面渲染完成
-    wx.request({
-      url:'https://www.baidu.com',
-      method:'GET',
-      success:this.onRequestSuccess,
-      fail:this.onRequestFail,
-      complete:this.onRequestComplete
-    })
+    // wx.request({
+    //   url:'https://www.baidu.com',
+    //   method:'GET',
+    //   success:this.onRequestSuccess,
+    //   fail:this.onRequestFail,
+    //   complete:this.onRequestComplete
+    // })
 
   },
   onShow:function(){

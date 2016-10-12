@@ -1,7 +1,7 @@
 Page({
   data:{
     // text:"这是一个页面"
-    hidden: true
+    filePaths:null
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -21,21 +21,31 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
-  loadingChange: function () {
-    // this.setData({
-    //   hidden: true
-    // })
-  },
-  loadingTap: function () {
-    this.setData({
-      hidden: false
-    })
+  chooseTapped:function(e){
+    var that = this;
+    wx.chooseImage({
+      success:function(res){
+        that.setData({
+          filePaths:res.tempFilePaths
+        })
 
-    // var that = this
-    // setTimeout(function () {
-    //   that.setData({
-    //     hidden: true
-    //   })
-    // }, 1500)
+        console.log("已选择照片")
+      }
+    })
+  },
+  uploadTapped:function(e){
+    if(this.data.filePaths != null)
+    {
+      var path = this.data.filePaths[0]
+
+      wx.uploadFile({
+        url:"http://localhost:8888/upload.php",
+        filePath:path,
+        name:'file',
+        fromData:{
+          "user":"test"
+        }
+      })
+    }
   }
 })

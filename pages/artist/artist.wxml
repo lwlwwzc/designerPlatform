@@ -1,4 +1,11 @@
 <!--index.wxml-->
-<view class="mainView">
-    <input placeholder="请输入关键字"></input>
-</view>
+<scroll-view class="container" scroll-y="true">
+    <button bindtap="btnTapped">点击</button>
+</scroll-view>
+
+<action-sheet hidden="{{actionHidden}}" bindchange="actionChange">
+    <block wx:for="{{[1,2,3]}}">
+        <action-sheet-item>哈哈哈</action-sheet-item>
+    </block>
+    <action-sheet-cancel>取消</action-sheet-cancel>
+</action-sheet>

@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<loading hidden="{{hidden}}">加载中...</loading>
+<loading hidden="{{hidden}}" bindchange="loadingChange">加载中...</loading>
 <scroll-view wx:if="{{hidden}}" class="mainView">
     <view class="itemView" wx:for="{{itemList}}">
         <view id="{{item.id}}" bindtap="imageTapped" class="bannerView" style="background-image:url({{item.imageUrl}});">
