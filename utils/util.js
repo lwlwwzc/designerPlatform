@@ -16,19 +16,6 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
-function ScreenSize(){
-  var size = null;
-
-  wx.getSystemInfo({
-    success:function(res){
-      size = {"width":res.windowWidth, "height":res.windowHeight}
-    }
-  })
-
-  setTimeout("return size", 2000)
-}
-
 module.exports = {
-  ScreenSize:ScreenSize,
   formatTime: formatTime
 }

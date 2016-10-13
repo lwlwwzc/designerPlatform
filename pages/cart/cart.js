@@ -42,7 +42,7 @@ Page({
         url:"http://localhost:8888/upload.php",
         filePath:path,
         name:'file',
-        fromData:{
+        formData:{
           "user":"test"
         }
       })

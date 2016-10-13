@@ -1,12 +1,13 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/classify/classify",
+    "pages/classifyList/classifyList",
+    "pages/classifyDetail/classifyDetail",
     "pages/user/user",
     "pages/cart/cart",
     "pages/prdtDetail/prdtDetail",
     "pages/prdtList/prdtList",
-    "pages/artist/artist",
+    "pages/artistList/artistList",
     "pages/artistDetail/artistDetail"
   ],
   "window":{
@@ -30,13 +31,13 @@
       "selectedIconPath":"assets/image/home.png"
     },
     {
-      "pagePath":"pages/classify/classify",
+      "pagePath":"pages/classifyList/classifyList",
       "text":"分类",
       "iconPath":"assets/image/classify.png",
       "selectedIconPath":"assets/image/classify.png"
     },
     {
-      "pagePath":"pages/artist/artist",
+      "pagePath":"pages/artistList/artistList",
       "text":"设计师",
       "iconPath":"assets/image/star.png",
       "selectedIconPath":"assets/image/star.png"
