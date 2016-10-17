@@ -1,3 +1,5 @@
+var net = require('../../utils/net.js')
+
 Page({
   data:{
     // text:"这是一个页面"
@@ -8,13 +10,10 @@ Page({
   },
   onReady:function(){
     // 页面渲染完成
-    // wx.request({
-    //   url:'https://www.baidu.com',
-    //   method:'GET',
-    //   success:this.onRequestSuccess,
-    //   fail:this.onRequestFail,
-    //   complete:this.onRequestComplete
-    // })
+
+    // net.get('http://www.baidu.com')
+    // .then(this.onRequestSuccess)
+    // .catch(this.onRequestFail)
 
   },
   onShow:function(){
