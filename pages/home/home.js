@@ -7,28 +7,12 @@ var app = getApp()
 
 Page( {
   data: {
-    indicatorDots: true,
-    autoplay: true,
-    interval: 3000,
-    duration: 1000,
+    isLogin: true,
+    user: {
+      name: 'lwl'
+    },
     screenSize: null,
-    imgSize: null,
     hidden: true,
-
-    banners: [
-      {
-        bannerId: "1",
-        bannerUrl: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
-      },
-      {
-        bannerId: "2",
-        bannerUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
-      },
-      {
-        bannerId: "3",
-        bannerUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
-      }
-    ],
 
     recomList: [
       {
@@ -40,27 +24,60 @@ Page( {
           "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg",
           "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
         ]
-      },
+      }
+    ],
+    contentList: [
       {
-        name: "设计师2",
-        avatar: "../../assets/image/icon2.jpg",
-        newList: [
-          "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
-          "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
-          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg",
-          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+        title: "成为设计师",
+        itemList: [
+          {
+            title: "唐伯虎",
+            imgUrl: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
+          },
+          {
+            title: "李白",
+            imgUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
+          },
+          {
+            title: "陶渊明",
+            imgUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+          }
         ]
       },
       {
-        name: "设计师3",
-        avatar: "../../assets/image/icon3.jpg",
-        newList: [
-          "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg",
-          "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg",
-          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg",
-          "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+        title: "设计精选",
+        itemList: [
+          {
+            title: "丝巾",
+            imgUrl: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
+          },
+          {
+            title: "枕头套",
+            imgUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
+          },
+          {
+            title: "礼服",
+            imgUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+          }
         ]
       },
+      {
+        title: "设计师故事",
+        itemList: [
+          {
+            title: "唐伯虎",
+            imgUrl: "http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"
+          },
+          {
+            title: "李白",
+            imgUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"
+          },
+          {
+            title: "陶渊明",
+            imgUrl: "http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg"
+          }
+        ]
+      }
     ]
   },
   onLoad: function( options ) {
@@ -68,7 +85,13 @@ Page( {
     this.setData( {
       hidden: false
     })
-    wx.getSystemInfo( { success: this.onGetScreenSize })
+
+    var that = this
+    util.screenSize().then(
+      function( res ) {
+        that.onGetScreenSize( res )
+      }
+    )
 
   },
   onReady: function() {

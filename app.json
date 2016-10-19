@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/discover/discover",
     "pages/classifyList/classifyList",
     "pages/classifyDetail/classifyDetail",
     "pages/user/user",
@@ -31,8 +32,8 @@
       "selectedIconPath":"assets/image/home.png"
     },
     {
-      "pagePath":"pages/classifyList/classifyList",
-      "text":"分类",
+      "pagePath":"pages/discover/discover",
+      "text":"发现",
       "iconPath":"assets/image/classify.png",
       "selectedIconPath":"assets/image/classify.png"
     },
@@ -43,14 +44,8 @@
       "selectedIconPath":"assets/image/star.png"
     },
     {
-      "pagePath":"pages/cart/cart",
-      "text":"购物车",
-      "iconPath":"assets/image/cart.png",
-      "selectedIconPath":"assets/image/cart.png"
-    },
-    {
       "pagePath":"pages/user/user",
-      "text":"个人",
+      "text":"我的",
       "iconPath":"assets/image/mine.png",
       "selectedIconPath":"assets/image/mine.png"
     }]

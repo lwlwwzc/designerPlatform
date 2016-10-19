@@ -1,33 +1,45 @@
 <!--index.wxml-->
-<loading hidden="{{hidden}}">加载中...</loading>
+<!--<loading hidden="{{hidden}}">加载中...</loading>-->
 
-<view wx:if="{{hidden}}" style="background-color:white;width:100%;height:100%;display:flex;flex-direction:column;align-content:stretch;align-items:flex-start;">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="width:100%;height:150px;">
-        <block wx:for="{{banners}}">
-            <swiper-item>
-                <view id="{{item.bannerId}}" bindtap="bannerTapped">
-                    <image src="{{item.bannerUrl}}" style="width:100%"/>
-                </view>
-            </swiper-item>
-        </block>
-    </swiper>
-    <!--//banner不随着一起滚动-->
-    <!--<scroll-view  scroll-y="true" style="width:100%;height:{{screenSize.height - 196}}px">-->
-    <!--//banner跟着一起滚动-->
-    <scroll-view  scroll-y="true" style="width:100%;">
-        <view class="itemView" wx:for="{{recomList}}">
-            <view class="recomArtistView" bindtap="artistInfoTap">
-                <view class="avatorIcon" style="background-image:url({{item.avatar}});"></view>
-                <text style="margin-left:10px;">{{item.name}}</text>
-            </view>
-            <view style="recomPrdtView">
-                <view style="margin:5px;float:left;width:{{imgSize.width}}px;height:{{imgSize.height}}px;" wx:for="{{item.newList}}" wx:for-index="imgIdx" wx:for-item="imgSrc">
-                    <image src="{{imgSrc}}" style="width:100%; height:100%" ></image>
+<view wx:if="{{hidden}}" class="mainView">
+    <view class="titleView">
+        <text class="titleText" style="margin-left:30rpx;">{{isLogin ? user.name + "，你好" : "你好"}}</text>
+        <text style="margin-top:30rpx;margin-left:30rpx;">原创设计</text>
+    </view>
+    
+    <view class="contentView" wx:for="{{contentList}}">
+        <text class="contentHeader">{{item.title}}</text>
+        <scroll-view class="scroll-view_H" scroll-x="true" style="margin-top:50rpx;">
+            <view class="scroll-view-item_H" wx:for="{{item.itemList}}" wx:for-item="contentCell">
+                <view class="contentCellView">
+                    <title style="margin-left:30rpx;margin-bottom:30rpx;">{{contentCell.title}}</title>
+                    <image src="{{contentCell.imgUrl}}" class="contentImage"></image>
                 </view>
             </view>
-        </view>
+        </scroll-view>
+    </view>
+</view>
+
+<!--<view style="width:750rpx;height:300rpx;">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
     </scroll-view>
 </view>
+
+<view style="width:750rpx;height:300rpx;">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view id="green" class="scroll-view-item_H" style="background:green;"></view>
+        <view id="red"  class="scroll-view-item_H" style="background:red;"></view>
+        <view id="yellow"  class="scroll-view-item_H" style="background:yellow;"></view>
+        <view id="blue" class="scroll-view-item_H"  style="background:blue;"></view>
+    </scroll-view>
+</view>-->
 
 
 
