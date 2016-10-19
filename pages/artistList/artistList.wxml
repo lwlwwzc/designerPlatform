@@ -1,11 +1,8 @@
-<!--index.wxml-->
-<scroll-view class="container" scroll-y="true">
-    <button bindtap="btnTapped">点击</button>
-</scroll-view>
+<view class="mainView">
+    <view>
+        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg">
 
-<action-sheet hidden="{{actionHidden}}" bindchange="actionChange">
-    <block wx:for="{{[1,2,3]}}">
-        <action-sheet-item>哈哈哈</action-sheet-item>
-    </block>
-    <action-sheet-cancel>取消</action-sheet-cancel>
-</action-sheet>
+        </image>
+        <input placeholder="设计师搜索" />
+    </view>
+</view>
