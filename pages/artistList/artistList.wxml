@@ -1,8 +1,19 @@
 <view class="mainView">
-    <view>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg">
-
-        </image>
-        <input placeholder="设计师搜索" />
+    <view class="searchView">
+        <icon type="search" size="23"/>
+        <input style="margin-left:20rpx; width:100%" placeholder="搜索" />
+    </view>
+    <view class="contentView">
+        <view class="btnBarView">
+            <view class="tabView" id="{{item.tabId}}" wx:for="{{tabViewList}}" bindtap="tabItemTap">
+                <text class="tabBarText {{curTabIndex == index ? 'active' : '' }}">{{item.title}}</text>
+            </view>
+        </view>
+        <scroll-view class="artistListView">
+            <view wx:for="{{artistList}}" >
+                <image src="{{item.iconUrl}}"></image>
+                <text>{{item.name}}</text>
+            </view>
+        </scroll-view>
     </view>
 </view>
