@@ -1,2 +1,12 @@
-<!--index.wxml-->
-<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>
+
+<!--<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>-->
+
+<view class="container_column fullSize">
+    <scroll-view class="container_column fullWidth" style="height:1000rpx;" scroll-y="true">
+        <view>
+            <image class="img-50"  src="/assets/image/icon1.jpg" mode="aspectFill"></image>
+            <image class="img-25" src="/assets/image/icon2.jpg" mode="aspectFill"></image>
+            <image class="img-25" src="/assets/image/icon3.jpg" mode="aspectFill"></image>
+        </view>
+    </scroll-view>
+</view>

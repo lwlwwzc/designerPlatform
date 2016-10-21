@@ -1,17 +1,17 @@
 <!--index.wxml-->
-<!--<loading hidden="{{hidden}}">加载中...</loading>-->
+<loading hidden="{{hidden}}">加载中...</loading>
 
 <view wx:if="{{hidden}}" class="mainView">
-    <view class="titleView">
+    <view class="container_column fullWidth">
         <text class="titleText" style="margin-left:30rpx;">{{isLogin ? user.name + "，你好" : "你好"}}</text>
         <text style="margin-top:25rpx;margin-left:30rpx;">原创设计</text>
     </view>
     
-    <view class="contentView" wx:for="{{contentList}}">
+    <view class="container_column fullWidth" style="margin-top:30rpx;" wx:for="{{contentList}}">
         <text class="contentHeader">{{item.title}}</text>
         <scroll-view class="scroll-view_H" scroll-x="true" style="margin-top:50rpx;">
             <view class="scroll-view-item_H" wx:for="{{item.itemList}}" wx:for-item="contentCell">
-                <view class="contentCellView">
+                <view class="container_column fullWidth">
                     <title style="margin-left:30rpx;margin-bottom:30rpx;">{{contentCell.title}}</title>
                     <image src="{{contentCell.imgUrl}}" class="contentImage"></image>
                 </view>
@@ -19,27 +19,6 @@
         </scroll-view>
     </view>
 </view>
-
-<!--<view style="width:750rpx;height:300rpx;">
-    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-        <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="scroll-view-item_H"></image>
-    </scroll-view>
-</view>
-
-<view style="width:750rpx;height:300rpx;">
-    <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
-        <view id="green" class="scroll-view-item_H" style="background:green;"></view>
-        <view id="red"  class="scroll-view-item_H" style="background:red;"></view>
-        <view id="yellow"  class="scroll-view-item_H" style="background:yellow;"></view>
-        <view id="blue" class="scroll-view-item_H"  style="background:blue;"></view>
-    </scroll-view>
-</view>-->
 
 
 

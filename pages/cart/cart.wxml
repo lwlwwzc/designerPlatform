@@ -7,6 +7,8 @@
         <view id="blue" class="scroll-view-item_H"  style="background:blue;"></view>
     </scroll-view>
 
+    <image src="/assets/image/icon1.jpg"></image>
+
 </view>
 
 

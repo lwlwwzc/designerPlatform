@@ -33,11 +33,6 @@
     align-items:flex-start;
 }
 
-.artistListView
-{
-    
-}
-
 .btnBarView
 {
     width:100%;
@@ -65,4 +60,22 @@
 .tabBarText.active
 {
     color:red;
+}
+
+.cellView
+{
+    background-color:white;
+    max-width:100%;
+    margin-left:10rpx;
+    margin-right:10rpx;
+    margin-top:10rpx;
+
+}
+
+.hotImage
+{
+    flex:0 0 33.33%;
+    max-width:33.33%;
+    box-sizing:border-box;
+    height:250rpx;
 }

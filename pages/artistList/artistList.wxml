@@ -3,17 +3,26 @@
         <icon type="search" size="23"/>
         <input style="margin-left:20rpx; width:100%" placeholder="搜索" />
     </view>
-    <view class="contentView">
+    <view class="container_column fullWidth">
         <view class="btnBarView">
             <view class="tabView" id="{{item.tabId}}" wx:for="{{tabViewList}}" bindtap="tabItemTap">
                 <text class="tabBarText {{curTabIndex == index ? 'active' : '' }}">{{item.title}}</text>
             </view>
         </view>
-        <scroll-view class="artistListView">
-            <view wx:for="{{artistList}}" >
-                <image src="{{item.iconUrl}}"></image>
-                <text>{{item.name}}</text>
+        <scroll-view class="container_column fullWidth" style="background-color:#eee; " scroll-y="true">
+            <view class="container_column cellView" wx:for="{{artistList}}" >
+                <view id="{{item.artistId}}" class="container_row fullWidth jc_between align_center" style="margin-left:20rpx;margin-top:20rpx; margin-right:20rpx; margin-bottom:30rpx;" bindtap="artistItemTap">
+                    <view class="container_row jc_start align_center">
+                        <image class="avatarImage" src="{{item.iconUrl}}"></image>
+                        <text style="margin-left:50rpx;">{{item.name}}</text>
+                    </view>
+                    <text style="margin-right:50rpx;" bindtap="attentionTap">{{item.attention ? '已关注' : '+关注'}}</text>
+                </view>
+                <view class="fullWidth">
+                    <image class="hotImage" mode="aspectFill" wx:for="{{item.hotList}}" id="{{hotItem.hotId}}" wx:for-item="hotItem" src="{{hotItem.imgUrl}}" bindtap="hotItemTap"></image>
+                </view>
             </view>
         </scroll-view>
     </view>
 </view>
+
