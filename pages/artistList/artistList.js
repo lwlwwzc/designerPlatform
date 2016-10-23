@@ -24,15 +24,15 @@ Page( {
         attention: false,
         hotList: [
           {
-            hotId: 1,
+            prdtId: 1,
             imgUrl: "/assets/image/icon2.jpg"
           },
           {
-            hotId: 2,
+            prdtId: 2,
             imgUrl: "/assets/image/icon3.jpg"
           },
           {
-            hotId: 3,
+            prdtId: 3,
             imgUrl: "/assets/image/icon1.jpg"
           }
         ]
@@ -44,115 +44,35 @@ Page( {
         attention: true,
         hotList: [
           {
-            hotId: 1,
+            prdtId: 1,
             imgUrl: "/assets/image/icon2.jpg"
           },
           {
-            hotId: 2,
+            prdtId: 2,
             imgUrl: "/assets/image/icon3.jpg"
           },
           {
-            hotId: 3,
+            prdtId: 3,
             imgUrl: "/assets/image/icon1.jpg"
           }
         ]
       },
       {
-        artistId: 1,
+        artistId: 2,
         iconUrl: "/assets/image/icon3.jpg",
         name: "superman",
         attention: false,
         hotList: [
           {
-            hotId: 1,
+            prdtId: 1,
             imgUrl: "/assets/image/icon2.jpg"
           },
           {
-            hotId: 2,
+            prdtId: 2,
             imgUrl: "/assets/image/icon3.jpg"
           },
           {
-            hotId: 3,
-            imgUrl: "/assets/image/icon1.jpg"
-          }
-        ]
-      },
-      {
-        artistId: 1,
-        iconUrl: "/assets/image/icon3.jpg",
-        name: "superman",
-        attention: false,
-        hotList: [
-          {
-            hotId: 1,
-            imgUrl: "/assets/image/icon2.jpg"
-          },
-          {
-            hotId: 2,
-            imgUrl: "/assets/image/icon3.jpg"
-          },
-          {
-            hotId: 3,
-            imgUrl: "/assets/image/icon1.jpg"
-          }
-        ]
-      },
-      {
-        artistId: 1,
-        iconUrl: "/assets/image/icon3.jpg",
-        name: "superman",
-        attention: false,
-        hotList: [
-          {
-            hotId: 1,
-            imgUrl: "/assets/image/icon2.jpg"
-          },
-          {
-            hotId: 2,
-            imgUrl: "/assets/image/icon3.jpg"
-          },
-          {
-            hotId: 3,
-            imgUrl: "/assets/image/icon1.jpg"
-          }
-        ]
-      },
-      {
-        artistId: 1,
-        iconUrl: "/assets/image/icon3.jpg",
-        name: "superman",
-        attention: false,
-        hotList: [
-          {
-            hotId: 1,
-            imgUrl: "/assets/image/icon2.jpg"
-          },
-          {
-            hotId: 2,
-            imgUrl: "/assets/image/icon3.jpg"
-          },
-          {
-            hotId: 3,
-            imgUrl: "/assets/image/icon1.jpg"
-          }
-        ]
-      },
-      {
-        artistId: 1,
-        iconUrl: "/assets/image/icon3.jpg",
-        name: "superman",
-        attention: false,
-        hotList: [
-          {
-            hotId: 1,
-            imgUrl: "/assets/image/icon2.jpg"
-          },
-          {
-            hotId: 2,
-            imgUrl: "/assets/image/icon3.jpg"
-          },
-          {
-            hotId: 3,
+            prdtId: 3,
             imgUrl: "/assets/image/icon1.jpg"
           }
         ]
@@ -185,21 +105,28 @@ Page( {
     }, 3000 )
 
   },
-
-  btnTapped: function( event ) {
-    this.setData( {
-      actionHidden: !this.data.actionHidden
-    })
-  },
   actionChange: function( e ) {
     this.setData( {
       actionHidden: !this.data.actionHidden
     })
   },
   tabItemTap: function( event ) {
-    var index = event.currentTarget.id;
+    var index = event.currentTarget.id
     this.setData( {
       curTabIndex: index
     })
+  },
+  artistItemTap: function( event ) {
+    var itemId = event.currentTarget.id
+    wx.navigateTo( {
+      url: '/pages/artistDetail/artistDetail?id='+ itemId
+    })
+  },
+  hotItemTap: function( event ) {
+    var prdtid = event.currentTarget.dataset.prdtid
+    wx.navigateTo({
+      url:'/pages/prdtDetail/prdtDetail?prdtid='+prdtid
+    })
+
   }
 })
