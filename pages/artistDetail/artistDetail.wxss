@@ -1,0 +1,8 @@
+.mainView {
+    background-color:#eee;
+    width:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
