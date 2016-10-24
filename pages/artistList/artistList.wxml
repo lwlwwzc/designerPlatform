@@ -18,7 +18,7 @@
                         <image class="avatarImage" src="{{item.iconUrl}}"></image>
                         <text style="margin-left:50rpx;">{{item.name}}</text>
                     </view>
-                    <text style="margin-right:50rpx;" bindtap="attentionTap">{{item.attention ? '已关注' : '+关注'}}</text>
+                    <text style="margin-right:50rpx;" id="{{item.artistId}}" catchtap="attentionTap">{{item.attention ? '已关注' : '+关注'}}</text>
                 </view>
                 <view class="fullWidth">
                     <image class="hotImage" mode="aspectFill" wx:for="{{item.hotList}}" data-prdtid="{{item.prdtId}}" wx:for-item="hotItem" src="{{hotItem.imgUrl}}" bindtap="hotItemTap"></image>

@@ -119,13 +119,31 @@ Page( {
   artistItemTap: function( event ) {
     var itemId = event.currentTarget.id
     wx.navigateTo( {
-      url: '/pages/artistDetail/artistDetail?id='+ itemId
+      url: '/pages/artistDetail/artistDetail?id=' + itemId
     })
+  },
+  attentionTap: function( event ) {
+    var itemId = event.currentTarget.id
+    for(var i=0; i<this.data.artistList.length;i++)
+    {
+      var item = this.data.artistList[i]
+      if(item.artistId == itemId)
+      {
+        var attention = item['attention']
+        item['attention'] = !attention
+        break;
+      }
+    }
+
+    this.setData({
+      artistList:this.data.artistList
+    })
+
   },
   hotItemTap: function( event ) {
     var prdtid = event.currentTarget.dataset.prdtid
-    wx.navigateTo({
-      url:'/pages/prdtDetail/prdtDetail?prdtid='+prdtid
+    wx.navigateTo( {
+      url: '/pages/prdtDetail/prdtDetail?prdtid=' + prdtid
     })
 
   }
