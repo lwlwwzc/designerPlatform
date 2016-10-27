@@ -123,7 +123,8 @@ Page( {
     })
   },
   attentionTap: function( event ) {
-    var itemId = event.currentTarget.id
+    var itemId = event.currentTarget.dataset.itemid
+
     for(var i=0; i<this.data.artistList.length;i++)
     {
       var item = this.data.artistList[i]
