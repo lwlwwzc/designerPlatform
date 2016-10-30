@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <loading hidden="{{hidden}}">加载中...</loading>
 
-<view wx:if="{{hidden}}" class="mainView">
+<view wx:if="{{hidden}}" class="rootView">
     <view class="container_column fullWidth">
         <text class="titleText" style="margin-left:30rpx;">{{isLogin ? user.name + "，你好" : "你好"}}</text>
         <text style="margin-top:25rpx;margin-left:30rpx;">原创设计</text>

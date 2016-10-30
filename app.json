@@ -1,9 +1,8 @@
 {
   "pages":[
     "pages/home/home",
-    "pages/discover/discover",
+    "pages/classify/classify",
     "pages/classifyList/classifyList",
-    "pages/classifyDetail/classifyDetail",
     "pages/user/user",
     "pages/cart/cart",
     "pages/prdtDetail/prdtDetail",
@@ -32,8 +31,8 @@
       "selectedIconPath":"assets/image/home.png"
     },
     {
-      "pagePath":"pages/discover/discover",
-      "text":"发现",
+      "pagePath":"pages/classify/classify",
+      "text":"分类",
       "iconPath":"assets/image/classify.png",
       "selectedIconPath":"assets/image/classify.png"
     },

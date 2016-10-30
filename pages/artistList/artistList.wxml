@@ -1,17 +1,14 @@
-<view class="mainView">
-    <view class="container_column fullWidth jc_center align_center" style="height:150rpx;background-color:white">
-        <view class="searchView">
-            <icon type="search" size="23"/>
-            <input style="margin-left:20rpx; width:100%" placeholder="搜索" />
-        </view>
-    </view>
+<import src="/pages/templates/common.wxml"/>
+
+<view class="rootView">
+    <template is="searchBar" data="{{placeholder: '搜索'}}"/>
     <view class="container_column fullWidth">
         <view class="btnBarView">
             <view class="tabView" id="{{item.tabId}}" wx:for="{{tabViewList}}" bindtap="tabItemTap">
                 <text class="tabBarText {{curTabIndex == index ? 'active' : '' }}">{{item.title}}</text>
             </view>
         </view>
-        <scroll-view class="container_column fullWidth" scroll-y="true" style="height:1000rpx;">
+        <scroll-view class="container_column fullWidth" scroll-y="true" style="height:1000rpx;background-color:#eee;">
             <view class="container_column cellView" wx:for="{{artistList}}" >
                 <view id="{{item.artistId}}" class="container_row fullWidth jc_between align_center" style="margin-left:20rpx;margin-top:20rpx; margin-right:20rpx; margin-bottom:30rpx;" bindtap="artistItemTap">
                     <view class="container_row jc_start align_center">
@@ -22,7 +19,6 @@
                 </view>
                 <view class="fullWidth">
                     <image class="hotImage" mode="aspectFill" wx:for="{{item.hotList}}" data-prdtid="{{item.prdtId}}" wx:for-item="hotItem" src="{{hotItem.imgUrl}}" bindtap="hotItemTap"></image>
-                    <!--<image style="width:100%;" mode="aspectFill" src="/assets/image/icon1.jpg"></image>-->
                 </view>
             </view>
         </scroll-view>

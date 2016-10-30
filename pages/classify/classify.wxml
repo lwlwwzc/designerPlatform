@@ -1,0 +1,5 @@
+<import src="/pages/templates/common.wxml"/>
+
+<view class="rootView">
+    <template is="searchBar" data="{{placeholder: '搜索'}}"/>
+</view>

@@ -1,0 +1,8 @@
+<template name="searchBar">
+    <view class="container_column jc_center align_center" style="width:750rpx;height:150rpx;background-color:white;">
+        <view class="searchView">
+            <icon type="search" size="23"/>
+            <input style="margin-left:30rpx;" placeholder="{{placeholder}}" />
+        </view>
+    </view>
+</template>
