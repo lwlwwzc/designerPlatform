@@ -2,7 +2,6 @@
   "pages":[
     "pages/home/home",
     "pages/classify/classify",
-    "pages/classifyList/classifyList",
     "pages/user/user",
     "pages/cart/cart",
     "pages/prdtDetail/prdtDetail",

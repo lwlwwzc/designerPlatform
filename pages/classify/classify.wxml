@@ -1,5 +1,7 @@
-<import src="/pages/templates/common.wxml"/>
-
-<view class="rootView">
-    <template is="searchBar" data="{{placeholder: '搜索'}}"/>
-</view>
+<scroll-view class="rootView fullWidth" style="background-color:#ccc">
+    <view class="container_column" wx:for="{{classifyList}}" style="margin-top:30rpx;">
+        <view class="container_column jc_center align_center bgImgStyle" style="background-image:url({{item.bgImgUrl}});">
+            <text class="maskText">{{item.name}}</text>
+        </view>
+    </view>
+</scroll-view>
