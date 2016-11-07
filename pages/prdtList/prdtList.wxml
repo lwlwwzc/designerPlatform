@@ -1,4 +1,20 @@
-<view>
-    <text>{{title}}</text>
-    <button bindtap="btnTapped">跳转</button>
-<view>
+<import src="/pages/templates/common.wxml"/>
+
+<view class="rootView">
+    <template is="searchBar" data="{{placeholder: '搜索'}}"/>
+    <view class="container_column">
+        <view class="btnBarView">
+            <view class="tabView" id="{{item.tabId}}" wx:for="{{tabViewList}}" bindtap="tabItemTap">
+                <text class="tabBarText {{curTabIndex == index ? 'active' : '' }}">{{item.title}}</text>
+            </view>
+        </view>
+        <scroll-view class="container_column" scroll-y="true" style="background-color:#eee; padding-bottom:30rpx;">
+            <view class="itemCell" wx:for="{{prdtList}}" 
+            style="float:{{index%2==0 ? 'left' : 'right'}}; margin-left:{{index%2==0 ? 30 : 0}}rpx; margin-right:{{index%2==0 ? 0 : 30}}rpx;">
+                <view>
+                </view>
+                <view>Content</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

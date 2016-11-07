@@ -45,5 +45,12 @@ Page({
   },
   onUnload: function () {
     // 页面关闭
+  },
+
+  //事件方法
+  itemTap:function(e){
+    wx.navigateTo({
+      url: '/pages/prdtList/prdtList'
+    })
   }
 })
