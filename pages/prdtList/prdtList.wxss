@@ -31,8 +31,17 @@
 .itemCell
 {
     margin-top:30rpx;
-    background-color:red;
+    background-color:white;
     width:330rpx;
-    height:400rpx;
+    height:500rpx;
     float:left;
+}
+
+.itemBgView
+{
+  width:100%;
+  height:300rpx;
+
+  background-repeat:no-repeat;
+  background-size:cover;
 }

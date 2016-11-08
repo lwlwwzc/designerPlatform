@@ -8,12 +8,15 @@
                 <text class="tabBarText {{curTabIndex == index ? 'active' : '' }}">{{item.title}}</text>
             </view>
         </view>
-        <scroll-view class="container_column" scroll-y="true" style="background-color:#eee; padding-bottom:30rpx;">
+        <scroll-view class="container_column" scroll-y="true" style="height:1050rpx;background-color:#eee; padding-bottom:30rpx;">
             <view class="itemCell" wx:for="{{prdtList}}" 
             style="float:{{index%2==0 ? 'left' : 'right'}}; margin-left:{{index%2==0 ? 30 : 0}}rpx; margin-right:{{index%2==0 ? 0 : 30}}rpx;">
-                <view>
+                <view class="container_row jc_start align_start itemBgView" style="background-image:url({{item.imageUrl}});"></view>
+                <view class="container_column jc_start align_start">
+                    <text>{{item.prdtName}}</text>
+                    <text>{{item.author}}</text>
+                    <text>{{item.price}}</text>
                 </view>
-                <view>Content</view>
             </view>
         </scroll-view>
     </view>

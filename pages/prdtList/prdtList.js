@@ -14,8 +14,49 @@ Page({
         title: '热门'
       }
     ],
-    prdtList:[
-      1,2,3,4,5,6,7,8
+    prdtList: [
+      {
+        pid: 0,
+        prdtName: "春天系列1",
+        imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
+        author: "李文磊",
+        price: 1000000
+      },
+      {
+        pid: 1,
+        prdtName: "夏天系列1",
+        imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
+        author: "李文磊",
+        price: 1000000
+      },
+      {
+        pid: 2,
+        prdtName: "秋天系列1",
+        imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
+        author: "李文磊",
+        price: 1000000
+      },
+      {
+        pid: 3,
+        prdtName: "冬天系列1",
+        imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
+        author: "李文磊",
+        price: 1000000
+      },
+      {
+        pid: 4,
+        prdtName: "动漫系列1",
+        imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
+        author: "李文磊",
+        price: 1000000
+      },
+      {
+        pid: 5,
+        prdtName: "复古系列1",
+        imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
+        author: "李文磊",
+        price: 1000000
+      }
     ],
     curTabIndex: 0
   },
