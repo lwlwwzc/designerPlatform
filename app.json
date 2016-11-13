@@ -12,7 +12,7 @@
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor":"#aaa",
-    "navigationBarTitleText": "bft",
+    "navigationBarTitleText": " ",
     "navigationBarTextStyle":"white",
     "backgroundColor":"#eee",
     "enablePullDownRefresh":true

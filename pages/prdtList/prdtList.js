@@ -3,6 +3,7 @@ var util = require('../../utils/util.js')
 Page({
   data: {
     // text:"这是一个页面"
+    typeId: null,
     title: 'hello world',
     tabViewList: [
       {
@@ -17,42 +18,42 @@ Page({
     prdtList: [
       {
         pid: 0,
-        prdtName: "春天系列1",
+        name: "回家防静电防静电反对反对户籍发动机号",
         imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
         author: "李文磊",
         price: 1000000
       },
       {
         pid: 1,
-        prdtName: "夏天系列1",
+        name: "夏天系列1",
         imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
         author: "李文磊",
         price: 1000000
       },
       {
         pid: 2,
-        prdtName: "秋天系列1",
+        name: "秋天系列1",
         imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
         author: "李文磊",
         price: 1000000
       },
       {
         pid: 3,
-        prdtName: "冬天系列1",
+        name: "冬天系列1",
         imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
         author: "李文磊",
         price: 1000000
       },
       {
         pid: 4,
-        prdtName: "动漫系列1",
+        name: "动漫系列1",
         imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
         author: "李文磊",
         price: 1000000
       },
       {
         pid: 5,
-        prdtName: "复古系列1",
+        name: "复古系列1",
         imageUrl: "http://imgb.mumayi.com/android/wallpaper/2012/02/01/sl_600_2012020105355767821253.jpg",
         author: "李文磊",
         price: 1000000
@@ -62,6 +63,13 @@ Page({
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
+
+    this.data.typeId = options.id
+
+    wx.setNavigationBarTitle({
+      title: options.name
+    })
+
     this.setData({
       title: options.title
     })

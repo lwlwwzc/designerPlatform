@@ -2,20 +2,19 @@
 
 <view class="rootView">
     <template is="searchBar" data="{{placeholder: '搜索'}}"/>
-    <view class="container_column">
+    <view class="container_column fullWdith">
         <view class="btnBarView">
             <view class="tabView" id="{{item.tabId}}" wx:for="{{tabViewList}}" bindtap="tabItemTap">
                 <text class="tabBarText {{curTabIndex == index ? 'active' : '' }}">{{item.title}}</text>
             </view>
         </view>
-        <scroll-view class="container_column" scroll-y="true" style="height:1050rpx;background-color:#eee; padding-bottom:30rpx;">
-            <view class="itemCell" wx:for="{{prdtList}}" 
-            style="float:{{index%2==0 ? 'left' : 'right'}}; margin-left:{{index%2==0 ? 30 : 0}}rpx; margin-right:{{index%2==0 ? 0 : 30}}rpx;">
-                <view class="container_row jc_start align_start itemBgView" style="background-image:url({{item.imageUrl}});"></view>
-                <view class="container_column jc_start align_start">
-                    <text>{{item.prdtName}}</text>
-                    <text>{{item.author}}</text>
-                    <text>{{item.price}}</text>
+        <scroll-view class="container_column fullWdith" scroll-y="true" style="height:1040rpx;background-color:#eee;padding-bottom:30rpx;">
+            <view class="container_row jc_start align_start itemCell" wx:for="{{prdtList}}">
+                <image class="itemImage" src="{{item.imageUrl}}" mode="aspectFill"></image>
+                <view class="container_column jc_start align_start itemRightView">
+                    <text class="itemText">{{item.name}}</text>
+                    <text class="itemText">作者：{{item.author}}</text>
+                    <text class="itemText">{{item.price}}<text style="font-size:10pt;">元</text></text> 
                 </view>
             </view>
         </scroll-view>

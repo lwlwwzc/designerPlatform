@@ -49,8 +49,11 @@ Page({
 
   //事件方法
   itemTap:function(e){
+
+    var id = e.currentTarget.dataset.type;
+    var name = e.currentTarget.dataset.name;
     wx.navigateTo({
-      url: '/pages/prdtList/prdtList'
+      url: '/pages/prdtList/prdtList?id='+id+"&name="+name
     })
   }
 })
