@@ -100,5 +100,13 @@ Page({
     this.setData({
       curTabIndex: index
     })
+  },
+  itemTap: function (event) {
+
+    var pid = event.currentTarget.dataset.pid
+    var name = event.currentTarget.dataset.name
+    wx.navigateTo({
+      url: '../prdtDetail/prdtDetail?pid='+pid+'&name='+name
+    })
   }
 })

@@ -9,7 +9,7 @@
             </view>
         </view>
         <scroll-view class="container_column fullWdith" scroll-y="true" style="height:1040rpx;background-color:#eee;padding-bottom:30rpx;">
-            <view class="container_row jc_start align_start itemCell" wx:for="{{prdtList}}">
+            <view data-pid="{{item.pid}}" data-name="{{item.name}}" class="container_row jc_start align_start itemCell" wx:for="{{prdtList}}" bindtap="itemTap">
                 <image class="itemImage" src="{{item.imageUrl}}" mode="aspectFill"></image>
                 <view class="container_column jc_start align_start itemRightView">
                     <text class="itemText">{{item.name}}</text>
