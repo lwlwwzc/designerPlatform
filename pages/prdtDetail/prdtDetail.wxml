@@ -1,3 +1,16 @@
-<view>
-    <text>商品详情</text>
+<view class="container_column jc_between fullSize">
+    <scroll-view class="container_column jc_start">
+        <swiper indicator-dots="true"
+                autoplay="true" interval="2000" duration="1000" style="height:400rpx;">
+            <block wx:for="{{prdt.imageList}}">
+                <swiper-item>
+                    <image src="{{item}}" mode="aspectFill" class="slide_image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </scroll-view>
+
+    <view class="container_row fullWidth jc_start align_center">
+       <text>123</text>
+    </view>
 </view>
