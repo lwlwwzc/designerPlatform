@@ -10,7 +10,8 @@
         </swiper>
     </scroll-view>
 
-    <view class="container_row fullWidth jc_start align_center">
-       <text>123</text>
+    <view class="container_row fullWidth jc_start align_center bottomView">
+        <button style="margin:0rpx;margin-left:30rpx;">购物车+</button>
+        <button style="margin:0rpx;margin-left:30rpx;">购买</button>
     </view>
 </view>
