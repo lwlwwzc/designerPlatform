@@ -7,7 +7,6 @@
 
 .bottomView
 {
+    height:10%;
     background-color:darkgrey;
-    padding-top:10rpx;
-    padding-bottom:10rpx;
 }

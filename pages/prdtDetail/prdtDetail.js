@@ -3,9 +3,9 @@ Page({
     // text:"这是一个页面"
     title: null,
     pid: null,
-    prdt:{
-      pid:1,
-      imageList:[
+    prdt: {
+      pid: 1,
+      imageList: [
         'http://pic54.nipic.com/file/20141202/432252_022410485001_2.jpg',
         'http://img1.imgtn.bdimg.com/it/u=637467956,3257203163&fm=21&gp=0.jpg',
         'http://img1.imgtn.bdimg.com/it/u=3912426461,4180125672&fm=21&gp=0.jpg'
@@ -34,5 +34,26 @@ Page({
   },
   onUnload: function () {
     // 页面关闭
+  },
+  basketBtnTap: function (event) {
+    wx.showToast({
+      title: '购物车',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+  favBtnTap: function (event) {
+    wx.showToast({
+      title: '收藏',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+  joinBtnTap: function (event) {
+    wx.showToast({
+      title: '加入购物车',
+      icon: 'success',
+      duration: 2000
+    })
   }
 })

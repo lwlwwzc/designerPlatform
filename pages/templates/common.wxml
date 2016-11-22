@@ -6,3 +6,11 @@
         </view>
     </view>
 </template>
+
+
+<template name="iconTextBtn">
+    <view class="container_column jc_center align_center">
+        <image src="{{iconUrl}}" mode="aspectFit" style="width:50rpx;height:50rpx;"></image>
+        <text style="color:black;margin-top:10rpx;font-size:28rpx;">{{title}}</text>
+    </view>
+</template>

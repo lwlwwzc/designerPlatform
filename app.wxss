@@ -93,6 +93,26 @@ page
   align-items:stretch;
 }
 
+.self_start
+{
+  align-self:flex-start;
+}
+
+.self_end
+{
+  align-self:flex-end;
+}
+
+.self_center
+{
+  align-self:center;
+}
+
+.self_stretch
+{
+  align-self:stretch;
+}
+
 .fullWidth
 {
   width:100%;
