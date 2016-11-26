@@ -13,9 +13,9 @@
                 <view id="{{item.artistId}}" class="container_row fullWidth jc_between align_center" style="margin-left:20rpx;margin-top:20rpx; margin-right:20rpx; margin-bottom:30rpx;" bindtap="artistItemTap">
                     <view class="container_row jc_start align_center">
                         <image class="avatarImage" src="{{item.iconUrl}}"></image>
-                        <text style="margin-left:50rpx;">{{item.name}}</text>
+                        <text style="margin-left:50rpx;font-size:40rpx;">{{item.name}}</text>
                     </view>
-                    <text style="margin-right:50rpx;" data-itemid="{{item.artistId}}" catchtap="attentionTap">{{item.attention ? '已关注' : '+关注'}}</text>
+                    <text style="margin-right:50rpx;font-size:40rpx;" data-itemid="{{item.artistId}}" catchtap="attentionTap">{{item.attention ? '已关注' : '+关注'}}</text>
                 </view>
                 <view class="fullWidth">
                     <image class="hotImage" mode="aspectFill" wx:for="{{item.hotList}}" data-prdtid="{{item.prdtId}}" wx:for-item="hotItem" src="{{hotItem.imgUrl}}" bindtap="hotItemTap"></image>

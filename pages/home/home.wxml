@@ -3,7 +3,7 @@
 <view class="rootView">
     <view class="container_column fullWidth">
         <text class="titleText" style="margin-left:30rpx;">{{isLogin ? user.name + "，你好" : "你好"}}</text>
-        <text style="margin-top:25rpx;margin-left:30rpx;">原创设计</text>
+        <text style="margin-top:25rpx;margin-left:30rpx;font-size:40rpx;">原创设计</text>
     </view>
     
     <view class="container_column fullWidth" style="margin-top:30rpx;" wx:for="{{contentList}}">
@@ -11,7 +11,7 @@
         <scroll-view class="scroll-view_H" scroll-x="true" style="margin-top:50rpx;">
             <view class="scroll-view-item_H" wx:for="{{item.itemList}}" wx:for-item="contentCell">
                 <view class="container_column fullWidth">
-                    <title style="margin-left:30rpx;margin-bottom:30rpx;">{{contentCell.title}}</title>
+                    <title style="margin-left:30rpx;margin-bottom:30rpx;font-size:40rpx;">{{contentCell.title}}</title>
                     <image src="{{contentCell.imgUrl}}" class="contentImage"></image>
                 </view>
             </view>

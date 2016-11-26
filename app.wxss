@@ -130,7 +130,7 @@ page
 }
 
 .titleText {
-  font-size:30pt;
+  font-size:80rpx;
   font-weight:bold;
 }
 

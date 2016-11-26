@@ -29,6 +29,7 @@
 
 .tabBarText
 {
+    font-size:50rpx;
     color:black;
 }
 
@@ -48,8 +49,6 @@
 
 .hotImage
 {
-    flex:0 0 33.33333%;
-    max-width:33.33333%;
-    box-sizing:border-box;
+    width:33.33333%;
     height:250rpx;
 }

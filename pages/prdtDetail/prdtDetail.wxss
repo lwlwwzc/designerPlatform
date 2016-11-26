@@ -4,9 +4,24 @@
     height:100%;
 }
 
-
 .bottomView
 {
-    height:10%;
+    height:450rpx;
     background-color:darkgrey;
+}
+
+.iconImage
+{
+    width:120rpx;
+    height:120rpx;
+    border-style:solid;
+    border-width:2rpx;
+    border-color:black;
+    border-radius:50%;
+}
+
+.introArea
+{
+    margin:30rpx;
+    font-size:36rpx;
 }

@@ -1,6 +1,6 @@
 .contentHeader
 {
-  font-size:20pt;
+  font-size:60rpx;
   font-weight:bold;
   margin-left:30rpx;
 }

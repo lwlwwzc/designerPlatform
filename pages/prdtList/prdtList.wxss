@@ -20,6 +20,7 @@
 
 .tabBarText
 {
+    font-size:50rpx;
     color:black;
 }
 
@@ -54,7 +55,7 @@
 
 .itemText
 {
-    font-size:16px;
+    font-size:30rpx;
     word-wrap:normal;
     word-break:break-all;
     margin-bottom:15rpx;
