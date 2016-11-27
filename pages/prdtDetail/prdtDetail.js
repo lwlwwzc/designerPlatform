@@ -3,14 +3,23 @@ Page({
     // text:"这是一个页面"
     title: null,
     pid: null,
-    prdt: {
+    prdtInfo: {
       pid: 1,
-      imageList: [
+      headerImgList: [
         'http://pic54.nipic.com/file/20141202/432252_022410485001_2.jpg',
         'http://img1.imgtn.bdimg.com/it/u=637467956,3257203163&fm=21&gp=0.jpg',
         'http://img1.imgtn.bdimg.com/it/u=3912426461,4180125672&fm=21&gp=0.jpg'
+      ],
+      introduce:'房价肯定jfk的jfk地方艰苦的接口就分开的jfk房间肯德基看风景的看房价肯定就发',
+      avatar:'/assets/image/icon1.jpg',
+      artist:'李文磊',
+      detailList:[
+        {imageUrl:'/assets/image/icon1.jpg', content:'发了鸡豆凉粉鸡豆凉粉就的法律角度来讲发的揭发老大家乐福的链接发来的'},
+        {imageUrl:'/assets/image/icon2.jpg', content:'发了鸡豆凉粉鸡豆凉粉就的法律角度来讲发的揭发老大家乐福的链接发来的'},
+        {imageUrl:'/assets/image/icon3.jpg', content:'发了鸡豆凉粉鸡豆凉粉就的法律角度来讲发的揭发老大家乐福的链接发来的'}
       ]
-    }
+    },
+    warning:'凡客京东客服接口的经济就打开房间打开缴款降低房价肯定对抗肌肤抵抗防静电架空地方jfk的接口'
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数

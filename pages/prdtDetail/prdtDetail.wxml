@@ -4,31 +4,31 @@
     <scroll-view class="container_column jc_start" scroll-y="true">
         <swiper indicator-dots="true"
                 autoplay="true" interval="2000" duration="1000" style="height:400rpx;">
-            <block wx:for="{{prdt.imageList}}">
+            <block wx:for="{{prdtInfo.headerImgList}}">
                 <swiper-item>
                     <image src="{{item}}" mode="aspectFill" class="slide_image"/>
                 </swiper-item>
             </block>
         </swiper>
         <view class="container_column jc_start align_start">
-            <text class="introArea">这是一个非常不错的作品，我花了很大的精力做出来的，点击扣费接口的接口房价肯定就看</text>
+            <text class="introArea">{{prdtInfo.introduce}}</text>
             <view class="container_row jc_start align_center" style="margin-top:30rpx;margin-left:30rpx;margin-bottom:50rpx;">
-                <image class="iconImage" src="/assets/image/icon2.jpg"></image>
-                <text style="margin-left:30rpx;font-size:36rpx;">设计师：李文磊</text>
+                <image class="iconImage" src="{{prdtInfo.avatar}}"></image>
+                <text style="margin-left:30rpx;font-size:36rpx;">设计师：{{prdtInfo.artist}}</text>
             </view>
-            <view class="container_column jc_start align_start fullWidth" wx:for="{{[1,2,3]}}">
-                <image src="/assets/image/icon1.jpg" style="margin-left:30rpx;width:690rpx;height:800rpx;" mode="aspectFill"></image>
-                <text style="margin:30rpx;">作品介绍:疯狂的疯狂简单快捷链接发来的记录飞机轮的揭发老大的解放路解放路的的飞机轮的记录法定放假了多久了放假了多久了</text>
+            <view class="container_column jc_start align_start fullWidth" style="margin-bottom:100rpx;" wx:for="{{prdtInfo.detailList}}">
+                <image src="{{item.imageUrl}}" style="margin-left:30rpx;width:690rpx;height:800rpx;" mode="aspectFill"></image>
+                <text style="margin:30rpx;">{{item.content}}</text>
             </view>
             <view style="margin:30rpx;">
-                <text>温馨提醒：
-                付了定金法律角度来看飞机离开的快乐jfk了大家看来飞机开绿灯考虑jfk了考虑到房价克劳福德江东父老打开
+                <text><text style="font-size:40rpx;font-weight:bold;">温馨提醒：</text>
+                {{warning}}
                 </text>
             </view>
             <view style="margin:30rpx;">
                 <text>设计师其他作品:</text>
                 <scroll-view class="scroll-view_H" scroll-x="true" style="margin-top:50rpx;">
-                    <view class="scroll-view-item_H" wx:for="{{item.itemList}}" wx:for-item="contentCell">
+                    <view class="scroll-view-item_H" wx:for="{{prdtInfo.otherPrdtList}}">
                         <view class="container_column fullWidth">
                             <title style="margin-left:30rpx;margin-bottom:30rpx;">{{contentCell.title}}</title>
                             <image src="{{contentCell.imgUrl}}" class="contentImage"></image>
@@ -48,7 +48,7 @@
                 <template is="iconTextBtn" data="{{iconUrl: '/assets/image/notLove.png', title:'收藏'}}"/>
             </view>
         </view>
-        <view class="container_column jc_center align_center" style="width:40%;height:100%;background-color:red;" bindtap="joinBtnTap">
+        <view class="container_column jc_center align_center" style="width:40%;height:100rpx;background-color:red;" bindtap="joinBtnTap">
             <text style="color:white;">加入购物车</text>
         </view>
     </view>

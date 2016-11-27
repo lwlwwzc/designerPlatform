@@ -6,7 +6,8 @@
 
 .bottomView
 {
-    height:450rpx;
+    min-height:100rpx;
+    max-height:100rpx;
     background-color:darkgrey;
 }
 
