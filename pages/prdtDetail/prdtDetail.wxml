@@ -27,12 +27,9 @@
             </view>
             <view style="margin:30rpx;">
                 <text>设计师其他作品:</text>
-                <scroll-view class="scroll-view_H" scroll-x="true" style="margin-top:50rpx;">
-                    <view class="scroll-view-item_H" wx:for="{{prdtInfo.otherPrdtList}}">
-                        <view class="container_column fullWidth">
-                            <title style="margin-left:30rpx;margin-bottom:30rpx;">{{contentCell.title}}</title>
-                            <image src="{{contentCell.imgUrl}}" class="contentImage"></image>
-                        </view>
+                <scroll-view class="scroll-view_Hor" scroll-x="true" style="margin-top:30rpx;">
+                    <view class="scrollItemView_H" wx:for="{{prdtInfo.otherPrdtList}}">
+                        <image src="{{item.imgUrl}}" class="rowItemImage"></image>
                     </view>
                 </scroll-view>
             </view>

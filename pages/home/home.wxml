@@ -11,7 +11,7 @@
         <scroll-view class="scroll-view_H" scroll-x="true" style="margin-top:50rpx;">
             <view class="scroll-view-item_H" wx:for="{{item.itemList}}" wx:for-item="contentCell">
                 <view class="container_column fullWidth">
-                    <title style="margin-left:30rpx;margin-bottom:30rpx;font-size:40rpx;">{{contentCell.title}}</title>
+                    <text style="margin-left:30rpx;margin-bottom:30rpx;font-size:40rpx;">{{contentCell.title}}</text>
                     <image src="{{contentCell.imgUrl}}" class="contentImage"></image>
                 </view>
             </view>

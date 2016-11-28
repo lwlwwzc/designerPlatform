@@ -17,6 +17,20 @@ Page({
         {imageUrl:'/assets/image/icon1.jpg', content:'发了鸡豆凉粉鸡豆凉粉就的法律角度来讲发的揭发老大家乐福的链接发来的'},
         {imageUrl:'/assets/image/icon2.jpg', content:'发了鸡豆凉粉鸡豆凉粉就的法律角度来讲发的揭发老大家乐福的链接发来的'},
         {imageUrl:'/assets/image/icon3.jpg', content:'发了鸡豆凉粉鸡豆凉粉就的法律角度来讲发的揭发老大家乐福的链接发来的'}
+      ],
+      otherPrdtList:[
+        {
+          pid:2,
+          imgUrl:'/assets/image/icon1.jpg'
+        },
+        {
+          pid:3,
+          imgUrl:'/assets/image/icon2.jpg'
+        },
+        {
+          pid:4,
+          imgUrl:'/assets/image/icon3.jpg'
+        }
       ]
     },
     warning:'凡客京东客服接口的经济就打开房间打开缴款降低房价肯定对抗肌肤抵抗防静电架空地方jfk的接口'
