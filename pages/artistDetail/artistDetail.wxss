@@ -6,3 +6,28 @@
     justify-content:flex-start;
     align-items:flex-start;
 }
+
+.headerImgView{
+    width:750rpx;
+    height:450rpx;
+}
+
+.avaterView{
+    margin-top:-120rpx;
+    margin-right:50rpx;
+}
+
+.signText{
+    align-self:flex-end;
+    margin-top:50rpx;
+    margin-left:50rpx;
+    margin-right:50rpx;
+    text-align:right;
+    font-size:40rpx;
+}
+
+.favImg{
+    width:48rpx;
+    height:48rpx;
+}
+

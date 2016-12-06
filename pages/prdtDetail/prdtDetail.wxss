@@ -43,6 +43,7 @@
 
 .rowItemImage
 {
+    display: inline-block;
     width: 300rpx;
     height: 300rpx;
 }
