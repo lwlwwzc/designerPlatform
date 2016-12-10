@@ -1,9 +1,60 @@
-
-<!--<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>-->
+<import src="/pages/templates/common.wxml"/>
 
 <view class="rootView">
     <view class="container_column fullWidth">
         <text class="titleText" style="margin-left:30rpx;">{{isLogin ? user.name + "，你好" : "你好"}}</text>
-        <text style="margin-top:25rpx;margin-left:30rpx;font-size:40rpx;">查看并编辑个人资料</text>
+        <text style="margin-top:25rpx;margin-left:30rpx;font-size:30rpx;">查看并编辑个人资料</text>
+        <template is="line" data="{{color:'gray', width:350, height:2, marginleft:30, margintop:30}}"/>
+        <view class="container_column fullwidth jc_start align_start" style="padding:0rpx 30rpx 30rpx 30rpx;">
+            <view data-index='0' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>我是设计师</text>
+                    <image src="/assets/image/user-designer.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+            <view data-index='1' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>我的关注</text>
+                    <image src="/assets/image/user-favorite.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+            <view data-index='2' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>我的购物车</text>
+                    <image src="/assets/image/user-cart.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+            <view data-index='3' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>我的订单</text>
+                    <image src="/assets/image/user-order.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+            <view data-index='4' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>我的地址</text>
+                    <image src="/assets/image/user-address.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+            <view data-index='5' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>设置</text>
+                    <image src="/assets/image/user-settings.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+            <view data-index='6' class="container_column jc_start align_start" style="margin-top:50rpx;" bindtap="itemTap">
+                <view class="container_row fullWidth jc_between align_start">
+                    <text>反馈</text>
+                    <image src="/assets/image/user-feedback.png" style="width:48rpx;height:48rpx;"></image>
+                </view>
+                <template is="line" data="{{color:'gray', width:690, height:2, margintop:50}}"/>
+            </view>
+        </view>
     </view>
 </view>

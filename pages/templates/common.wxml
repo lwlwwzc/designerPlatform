@@ -14,3 +14,7 @@
         <text style="color:black;margin-top:10rpx;font-size:25rpx;">{{title}}</text>
     </view>
 </template>
+
+<template name="line">
+    <view style="background-color:{{color}};width:{{width}}rpx;height:{{height}}rpx;margin-top:{{margintop}}rpx;margin-right:{{marginright}}rpx; margin-bottom:{{marginbottom}}rpx;margin-left:{{marginleft}}rpx;" />
+</template>
