@@ -1,0 +1,21 @@
+<view class="rootView fullSize" style="background-color:gray">
+    <view style="background-color:white">
+        <view class="container_row jc_start align_center" style="padding:30rpx;">
+            <text class="staticText">真实姓名：</text>
+            <input class="inputBorder inputArea" style="padding:10rpx;" placeholder="请输入姓名" placeholder-style="font-size:40rpx;color:gray"/>
+        </view>
+        <view class="container_row jc_start align_start" style="padding:30rpx;">
+            <text class="staticText">个性签名：</text>
+            <textarea class="inputBorder inputArea" style="padding:10rpx;height:100rpx;" placeholder="请输入个性签名，字数不超过30个" placeholder-style="font-size:40rpx;color:gray"/>
+        </view>
+        <view class="container_row jc_start align_start" style="padding:30rpx;">
+            <text class="staticText">自我介绍：</text>
+            <textarea class="inputBorder inputArea" style="padding:10rpx;" placeholder="请输入自我介绍，字数不超过200个" placeholder-style="font-size:40rpx;color:gray"/>
+        </view>
+    </view>
+
+    <view>
+        
+    </view>
+
+</view>

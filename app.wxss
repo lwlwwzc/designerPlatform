@@ -175,3 +175,9 @@ text {
     padding:10rpx;
     margin:40rpx;
 }
+
+.placeholderStyle
+{
+    font-size:40rpx;
+    color:red;
+}

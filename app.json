@@ -7,7 +7,8 @@
     "pages/prdtDetail/prdtDetail",
     "pages/prdtList/prdtList",
     "pages/artistList/artistList",
-    "pages/artistDetail/artistDetail"
+    "pages/artistDetail/artistDetail",
+    "pages/becomeArtist/becomeArtist"
   ],
   "window":{
     "backgroundTextStyle":"dark",
@@ -42,7 +43,7 @@
       "selectedIconPath":"assets/image/star.png"
     },
     {
-      "pagePath":"pages/user/user",
+      "pagePath":"pages/becomeArtist/becomeArtist",
       "text":"我的",
       "iconPath":"assets/image/mine.png",
       "selectedIconPath":"assets/image/mine.png"
