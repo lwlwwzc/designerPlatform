@@ -1,0 +1,25 @@
+<scroll-view class="rootView fullSize" scroll-y="true">
+    <view class="container_row jc_between align_center">
+        <view>
+            <image src="/assets/image/card1.png"></image>
+            <text>身份证正面</text>
+        </view>
+        <view>
+            <image src="/assets/image/card2.png"></image>
+            <text>身份证反面</text>
+        </view>
+        <view>
+            <image src=""></image>
+            <text>手持身份证正面</text>
+        </view>
+    </view>
+    
+    <view class="container_column jc_start align_start">
+        <text>请根据以下示例上传</text>
+        <view class="container_row jc_between align_center">
+            <image src="/assets/image/card1.png"></image>
+            <image src="/assets/image/card2.png"></image>
+            <image src="/assets/image/card1.png"></image>
+        </view>
+    </view>
+</scroll-view>

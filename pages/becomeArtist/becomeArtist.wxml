@@ -1,8 +1,27 @@
-<view class="rootView fullSize" style="background-color:gray">
+<scroll-view class="rootView fullSize" scroll-y="true">
     <view style="background-color:white">
         <view class="container_row jc_start align_center" style="padding:30rpx;">
             <text class="staticText">真实姓名：</text>
             <input class="inputBorder inputArea" style="padding:10rpx;" placeholder="请输入姓名" placeholder-style="font-size:40rpx;color:gray"/>
+        </view>
+        <view class="container_row jc_start align_center" style="padding:30rpx;">
+            <text class="staticText">昵称：</text>
+            <input class="inputBorder inputArea" style="padding:10rpx;" placeholder="请输入昵称" placeholder-style="font-size:40rpx;color:gray"/>
+        </view>
+        <view class="container_row jc_start align_center" style="padding:30rpx;">
+            <text class="staticText">年龄：</text>
+            <input class="inputBorder inputArea" type="number" style="padding:10rpx;" placeholder="请输入您的年龄" placeholder-style="font-size:40rpx;color:gray"/>
+        </view>
+        <view class="container_row jc_start align_center" style="padding:30rpx;">
+            <text class="staticText">性别：</text>
+            <radio-group bindchange="sexRadioChange">
+                <label>
+                    <radio value="0" checked="true"/>男
+                </label>
+                <label style="margin-left:30rpx;">
+                    <radio value="1" checked="false"/>女
+                </label>
+            </radio-group>
         </view>
         <view class="container_row jc_start align_start" style="padding:30rpx;">
             <text class="staticText">个性签名：</text>
@@ -13,9 +32,5 @@
             <textarea class="inputBorder inputArea" style="padding:10rpx;" placeholder="请输入自我介绍，字数不超过200个" placeholder-style="font-size:40rpx;color:gray"/>
         </view>
     </view>
-
-    <view>
-        
-    </view>
-
-</view>
+    <button style="width:690rpx;margin-bottom:30rpx;" bindtap="nextBtnTap">下一步</button>
+</scroll-view>

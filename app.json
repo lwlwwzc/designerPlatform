@@ -8,7 +8,8 @@
     "pages/prdtList/prdtList",
     "pages/artistList/artistList",
     "pages/artistDetail/artistDetail",
-    "pages/becomeArtist/becomeArtist"
+    "pages/becomeArtist/becomeArtist",
+    "pages/becomeArtist/uploadCard/uploadCard"
   ],
   "window":{
     "backgroundTextStyle":"dark",
