@@ -1,5 +1,6 @@
 Page( {
   data: {
+    scrollHeight:0,
     item: {
       index: 0,
       msg: 'this is a template',
@@ -76,13 +77,55 @@ Page( {
             imgUrl: "/assets/image/icon1.jpg"
           }
         ]
+      },
+      {
+        artistId: 3,
+        iconUrl: "/assets/image/icon1.jpg",
+        name: "宙斯",
+        attention: false,
+        hotList: [
+          {
+            prdtId: 1,
+            imgUrl: "/assets/image/icon2.jpg"
+          },
+          {
+            prdtId: 2,
+            imgUrl: "/assets/image/icon3.jpg"
+          },
+          {
+            prdtId: 3,
+            imgUrl: "/assets/image/icon1.jpg"
+          }
+        ]
+      },
+      {
+        artistId: 4,
+        iconUrl: "/assets/image/icon2.jpg",
+        name: "哈哈哈哈",
+        attention: false,
+        hotList: [
+          {
+            prdtId: 1,
+            imgUrl: "/assets/image/icon2.jpg"
+          },
+          {
+            prdtId: 2,
+            imgUrl: "/assets/image/icon3.jpg"
+          },
+          {
+            prdtId: 3,
+            imgUrl: "/assets/image/icon1.jpg"
+          }
+        ]
       }
     ],
     curTabIndex: 0
   },
   onLoad: function( options ) {
     // 页面初始化 options为页面跳转所带来的参数
-    console.log( "des on load" );
+    this.setData({
+      scrollHeight:this.data.artistList.length * 230
+    })
   },
   onReady: function() {
     // 页面渲染完成
