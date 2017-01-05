@@ -44,7 +44,7 @@
       "selectedIconPath":"assets/image/star.png"
     },
     {
-      "pagePath":"pages/becomeArtist/uploadCard/uploadCard",
+      "pagePath":"pages/user/user",
       "text":"我的",
       "iconPath":"assets/image/mine.png",
       "selectedIconPath":"assets/image/mine.png"

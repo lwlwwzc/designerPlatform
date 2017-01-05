@@ -2,9 +2,9 @@
 Page({
   data: {
     cardImage: {
-      front: '/assets/image/card1.png',
-      back: '/assets/image/card2.png',
-      hold: '/assets/image/card3.png'
+      front: '/assets/image/card1.jpg',
+      back: '/assets/image/card2.jpg',
+      hold: '/assets/image/card1.jpg'
     }
   },
   onLoad: function (options) {
