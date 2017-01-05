@@ -32,6 +32,10 @@ Page({
   //事件方法
   itemTap: function (event) {
     var itemIndex = event.currentTarget.dataset.index;
-    console.log(itemIndex);
+    if (itemIndex == 0) {
+      wx.navigateTo({
+        url: '/pages/becomeArtist/becomeArtist'
+      })
+    }
   }
 })

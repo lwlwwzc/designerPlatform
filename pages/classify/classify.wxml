@@ -1,4 +1,4 @@
-<scroll-view class="rootView fullWidth" style="background-color:#ccc">
+<scroll-view class="rootView fullSize" style="background-color:#ccc;height:{{pageHeight}}rpx;">
     <view class="container_column" wx:for="{{classifyList}}" style="margin-top:30rpx;">
         <view data-type="{{item.id}}" data-name="{{item.name}}" class="container_column jc_center align_center bgImgStyle" style="background-image:url({{item.bgImgUrl}});" bindtap="itemTap">
             <text class="maskText">{{item.name}}</text>
