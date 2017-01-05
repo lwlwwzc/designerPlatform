@@ -48,12 +48,12 @@ Page({
   },
 
   //事件方法
-  itemTap:function(e){
+  itemTap: function (event) {
 
-    var id = e.currentTarget.dataset.type;
-    var name = e.currentTarget.dataset.name;
+    var id = event.currentTarget.dataset.type;
+    var name = event.currentTarget.dataset.name;
     wx.navigateTo({
-      url: '/pages/prdtList/prdtList?id='+id+"&name="+name
+      url: '/pages/prdtList/prdtList?id=' + id + "&name=" + name
     })
   }
 })

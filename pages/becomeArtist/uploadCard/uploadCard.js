@@ -1,19 +1,37 @@
 // /pages/becomeArtist/uploadCard/uploadCard.js
 Page({
-  data:{},
-  onLoad:function(options){
+  data: {
+    cardImage: {
+      front: '/assets/image/card1.png',
+      back: '/assets/image/card2.png',
+      hold: '/assets/image/card3.png'
+    }
+  },
+  onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
   },
-  onReady:function(){
+  onReady: function () {
     // 页面渲染完成
   },
-  onShow:function(){
+  onShow: function () {
     // 页面显示
   },
-  onHide:function(){
+  onHide: function () {
     // 页面隐藏
   },
-  onUnload:function(){
+  onUnload: function () {
     // 页面关闭
+  },
+
+  //事件方法
+  uploadCardTap: function (event) {
+    var uploadType = event.currentTarget.dataset.type;
+    if(uploadType == 'front'){
+      console.log('front');
+    }else if(uploadType == 'back'){
+      console.log('back');
+    }else if(uploadType == 'hold'){
+      console.log('hold');
+    }
   }
 })

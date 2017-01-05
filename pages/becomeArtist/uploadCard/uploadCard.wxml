@@ -1,25 +1,11 @@
-<scroll-view class="rootView fullSize" scroll-y="true">
-    <view class="container_row jc_between align_center">
-        <view>
-            <image src="/assets/image/card1.png"></image>
-            <text>身份证正面</text>
-        </view>
-        <view>
-            <image src="/assets/image/card2.png"></image>
-            <text>身份证反面</text>
-        </view>
-        <view>
-            <image src=""></image>
-            <text>手持身份证正面</text>
-        </view>
+<scroll-view class="rootView fullSize" style="background-color:#ccc" scroll-y="true">
+    <view class="cardItemView container_column jc_center align_center" style="background-image:url({{cardImage.front}});" bindtap="uploadCardTap" data-type="front">
+        <text class="maskText">点击上传身份证正面照片</text>
     </view>
-    
-    <view class="container_column jc_start align_start">
-        <text>请根据以下示例上传</text>
-        <view class="container_row jc_between align_center">
-            <image src="/assets/image/card1.png"></image>
-            <image src="/assets/image/card2.png"></image>
-            <image src="/assets/image/card1.png"></image>
-        </view>
+    <view class="cardItemView container_column jc_center align_center" style="background-image:url({{cardImage.back}});margin-top:30rpx;" bindtap="uploadCardTap" data-type="back">
+        <text class="maskText">点击上传身份证反面照片</text>
+    </view>
+    <view class="cardItemView container_column jc_center align_center" style="background-image:url({{cardImage.hold}});margin-top:30rpx;" bindtap="uploadCardTap" data-type="hold">
+        <text class="maskText">点击上传身份证手持照片</text>
     </view>
 </scroll-view>
